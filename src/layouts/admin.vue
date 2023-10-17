@@ -14,27 +14,9 @@
 
             </div>
             <div class="col-12 col-sm-9 ">
-                <route-view>
-                    <div>
+                <router-view>
 
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Tên</th>
-                                    <th>Email</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="user in users" :key="user.id">
-                                    <td>{{ user.id }}</td>
-                                    <td>{{ user.name }}</td>
-                                    <td>{{ user.email }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </route-view>
+                </router-view>
             </div>
         </div>
     </div>
@@ -46,9 +28,10 @@ import Header from '../components/Header.vue'
 import Menu from '../components/Menu.vue'
 
 export default {
+
     components: {
         Header,
         Menu
     }
-}
+};
 </script>

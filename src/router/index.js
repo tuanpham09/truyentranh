@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import admin from './admin';
+import adminRoutes from './admin';
+
+const routes = [
+    ...adminRoutes, // Sử dụng các tuyến từ tệp admin.js
+];
 
 const router = createRouter({
     history: createWebHistory(),
-    routes: [
-        ...admin,
-    ]
-})
+    routes,
+});
 export default router;

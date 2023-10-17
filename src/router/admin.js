@@ -6,7 +6,7 @@ const admin = [
             {
                 path: "users",
                 name: "admin-users",
-                component: () => import("../pages/admin/users/index.vue") //src\pages\admin\users\index.vue
+                component: () => import("../pages/admin/users/index.vue")
             },
             {
                 path: "roles",
@@ -22,6 +22,6 @@ const admin = [
 
         ]
     }
-]
+];
 
 export default admin;
